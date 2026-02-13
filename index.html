@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EfraCode | Landing Page</title>
+    <meta
+      name="description"
+      content="Landing Page simple orientada a conversión para EfraCode. Diseño moderno, CTA claro y sección de beneficios."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container header__inner">
+        <div class="brand" aria-label="EfraCode">
+          <span class="brand__logo">E&lt;&gt;C</span>
+          <span class="brand__name">EfraCode</span>
+        </div>
+
+        <nav class="nav" aria-label="Navegación principal">
+          <a href="#beneficios">Beneficios</a>
+          <a href="#testimonios">Testimonios</a>
+          <a class="btn btn--small" href="#cta">Cotizar</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <main>
+      <section class="hero">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <p class="badge">Landing Page • HTML + CSS</p>
+            <h1>
+              Landing pages modernas
+              <span class="highlight">para convertir</span> visitas en clientes
+            </h1>
+            <p class="subtitle">
+              Diseño limpio, enfoque en conversión y una llamada a la acción clara.
+              Ideal para marcas personales y negocios locales.
+            </p>
+
+            <ul class="checks" aria-label="Características principales">
+              <li>✅ 100% responsive (móvil y escritorio)</li>
+              <li>✅ Jerarquía visual + CTA visible</li>
+              <li>✅ Secciones base para marketing (beneficios + testimonios)</li>
+            </ul>
+
+            <div class="actions">
+              <a class="btn" href="#cta">Pedir cotización</a>
+              <a class="btn btn--ghost" href="#beneficios">Ver beneficios</a>
+            </div>
+
+            <p class="note">Entrega típica: 48–72 horas (según alcance).</p>
+          </div>
+
+          <!-- Card CTA -->
+          <aside class="card" aria-label="Oferta principal">
+            <h2 class="card__title">Promo EfraCode</h2>
+            <p class="card__text">Landing + diseño + publicación (deploy) + soporte básico.</p>
+
+            <div class="stats" role="list">
+              <div class="stat" role="listitem">
+                <p class="stat__value">+30%</p>
+                <p class="stat__label">Mejor claridad</p>
+              </div>
+              <div class="stat" role="listitem">
+                <p class="stat__value">CTA</p>
+                <p class="stat__label">Botón visible</p>
+              </div>
+            </div>
+
+            <a class="btn btn--full" href="#cta">Quiero mi landing</a>
+            <p class="disclaimer">*Resultados dependen del negocio y contenido.</p>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Beneficios -->
+      <section class="section" id="beneficios">
+        <div class="container">
+          <h2>Beneficios</h2>
+          <p class="section__subtitle">
+            Una página enfocada en conversión: clara, rápida y con estructura probada.
+          </p>
+
+          <div class="grid">
+            <article class="box">
+              <h3>Diseño moderno</h3>
+              <p>Tipografía limpia, jerarquía visual y CTA visible.</p>
+            </article>
+            <article class="box">
+              <h3>Mensaje claro</h3>
+              <p>Una oferta principal + texto directo para reducir dudas.</p>
+            </article>
+            <article class="box">
+              <h3>Responsive real</h3>
+              <p>Se adapta perfecto a móvil, tablet y escritorio.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonios -->
+      <section class="section section--alt" id="testimonios">
+        <div class="container">
+          <h2>Testimonios</h2>
+          <p class="section__subtitle">
+            Prueba social para aumentar confianza y mejorar conversión.
+          </p>
+
+          <div class="grid">
+            <figure class="quote">
+              <blockquote>
+                “La landing quedó súper clara y el botón se ve perfecto en celular.”
+              </blockquote>
+              <figcaption>— Cliente demo</figcaption>
+            </figure>
+            <figure class="quote">
+              <blockquote>
+                “Me gustó que todo está ordenado y va directo al punto.”
+              </blockquote>
+              <figcaption>— Emprendedor demo</figcaption>
+            </figure>
+            <figure class="quote">
+              <blockquote>
+                “La estructura ayuda a explicar el servicio sin saturar.”
+              </blockquote>
+              <figcaption>— Marca personal demo</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA / Form -->
+      <section class="section" id="cta">
+        <div class="container cta">
+          <div>
+            <h2>¿Listo para tu landing?</h2>
+            <p class="section__subtitle">
+              Déjame tus datos y te mando una propuesta rápida.
+            </p>
+          </div>
+
+          <form class="form" action="#" method="post" aria-label="Formulario de contacto">
+            <label class="label">
+              Nombre
+              <input class="input" type="text" name="name" placeholder="Tu nombre" required />
+            </label>
+
+            <label class="label">
+              Correo
+              <input class="input" type="email" name="email" placeholder="tucorreo@ejemplo.com" required />
+            </label>
+
+            <label class="label">
+              Mensaje
+              <textarea class="input" name="message" rows="4" placeholder="¿Qué necesitas promocionar?" required></textarea>
+            </label>
+
+            <button class="btn btn--full" type="submit">Enviar</button>
+            <p class="tiny">Al enviar aceptas nuestras políticas de privacidad.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p><strong>EfraCode</strong> — Frontend & Diseño Web</p>
+        <p class="footer__muted">© 2026 EfraCode. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>
